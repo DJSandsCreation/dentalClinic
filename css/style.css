@@ -1,0 +1,225 @@
+/* /////     general styles     ///// */
+
+li {
+  list-style: none;
+}
+
+.social ul li {
+  display: inline;
+}
+
+/* /////     header area     ///// */
+
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+}
+
+.jumbotron {
+  background-image: url("../img/jombo-bg.jpg");
+  background-size: cover;
+}
+
+
+/* /////     about us     ////// */
+
+.first-column {
+
+  background-image: url("img/staff.jpg");
+  color: white;
+  font-size: 2rem;
+  border-width: 5px;
+  border-color: #000;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  align-items: center;
+
+}
+
+.second-column {
+
+  border-width: 2px;
+}
+
+
+/* //////  animations     ////// */
+
+/* call to action */
+.call-attention {
+  background-color: blue;
+}
+
+/* shake images - services */
+.shake-animate:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* button flip */
+
+.btn-animate.animated {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* pulse */
+
+.pulse {
+  background: #2cc7cc;
+  box-shadow: 0 0 0 rgba(2, 20, 80, 0.4);
+  animation: pulse 10s infinite;
+}
+
+.pulse:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(92, 44, 204, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(92, 44, 204, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(92, 44, 204, 0.4);
+  }
+}
+
+
+/* call to action 2 */
+/*-- Full Width Gradient CTA */
+.as-cta-full-gradient {
+  background-color: #222;
+  background-image: url("../img/jumbo2.jpg");
+}
+
+.as-cta-full-gradient .as-cta-desc h2,
+.as-cta-full-gradient .as-cta-desc p {
+  color: #fff;
+}
+
+
+/* carousel */
+
+#carousel-example-1z {
+  max-height: 1200px;
+  max-width: 1000px;
+
+}
+
+/*-- Full Width Gradient CTA */
+.as-cta-boxed-gradient {
+  background-color: #222;
+  background-image: linear-gradient(135deg, #444 0, #222 100%);
+  display: block;
+  width: 100%;
+}
+
+.as-cta-boxed-gradient .as-cta-desc h2,
+.as-cta-boxed-gradient .as-cta-desc p {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .as-cta-boxed-gradient {
+    text-align: center;
+  }
+
+  .as-cta-boxed-gradient .as-cta-btn {
+    margin-top: 20px;
+  }
+}
+
+.as-cta-full-white {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (max-width: 767px) {
+  .as-cta-full-white {
+    text-align: center;
+  }
+
+  .as-cta-full-white .as-cta-btn {
+    margin-top: 20px;
+  }
+}
+
+/*-- / Full Width White CTA */
+
+
+/*-- Map & form --*/
+
+.map-container-6 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* footer */
+
+.footer {
+  background: rgb(3, 18, 98);
+  color: #fff;
+}
+
+.sub-footer {
+  margin-bottom: 10px;
+}
